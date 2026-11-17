@@ -1,0 +1,155 @@
+# Chinese (Traditional) translation of Outline (i18n test build)
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-outline-i18n\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/index.ts:32
+msgid "Loading outline panel ..."
+msgstr "正在載入大綱面板..."
+
+#: src/index.ts:108 src/index.ts:132
+msgid "Toggle outline"
+msgstr "切換大綱"
+
+#: src/index.ts:123 src/index.ts:136
+msgid "Toggle outline collapse all"
+msgstr "全部摺疊/展開大綱"
+
+#: src/index.ts:130 src/settings.ts:11
+msgid "Outline"
+msgstr "大綱"
+
+#: src/panelHtml.ts:225 src/panelHtml.ts:233
+msgid "Collapse all"
+msgstr "全部摺疊"
+
+#: src/panelHtml.ts:231 src/panelHtml.ts:244
+msgid "OUTLINE"
+msgstr "大綱"
+
+#: src/panelHtml.ts:232
+msgid "Copy successful!"
+msgstr "複製成功！"
+
+#: src/panelHtml.ts:234
+msgid "Expand all"
+msgstr "全部展開"
+
+#: src/panelHtml.ts:248
+msgid "Search outline"
+msgstr "搜尋大綱"
+
+#: src/settings.ts:27
+msgid "show numbered headers"
+msgstr "為標題顯示編號"
+
+#: src/settings.ts:30
+msgid "Show Number"
+msgstr "顯示編號"
+
+#: src/settings.ts:35
+msgid "headers can be collapsed"
+msgstr "標題可以摺疊"
+
+#: src/settings.ts:38
+msgid "Collapsible"
+msgstr "可摺疊"
+
+#: src/settings.ts:43
+msgid "Automatically hide the panel when there is no content"
+msgstr "沒有內容時自動隱藏面板"
+
+#: src/settings.ts:46
+msgid "Auto Hide"
+msgstr "自動隱藏"
+
+#: src/settings.ts:51
+msgid "Item hover style type"
+msgstr "項目懸停樣式"
+
+#: src/settings.ts:54
+msgid "Hover Style Type"
+msgstr "滑鼠懸停樣式"
+
+#: src/settings.ts:57
+msgid "bold"
+msgstr "粗體"
+
+#: src/settings.ts:58
+msgid "highlight"
+msgstr "醒目提示"
+
+#: src/settings.ts:64
+msgid "Header depth"
+msgstr "顯示的標題深度"
+
+#: src/settings.ts:67
+msgid "Header Depth"
+msgstr "標題深度"
+
+#: src/settings.ts:73
+msgid "Item Padding"
+msgstr "項目間距"
+
+#: src/settings.ts:74
+msgid "This setting is used to change the height of toc item. The unit is px"
+msgstr "用於調整目錄項目的高度，單位為 px"
+
+#: src/settings.ts:81
+msgid "User style file (CSS)"
+msgstr "使用者樣式檔案 (CSS)"
+
+#: src/settings.ts:84
+msgid "User Style File"
+msgstr "使用者樣式檔案"
+
+#: src/settings.ts:91
+msgid "Disable the linewrap"
+msgstr "停用自動換行"
+
+#: src/settings.ts:95
+msgid "Disable Linewrap"
+msgstr "停用換行"
+
+#: src/settings.ts:100 src/settings.ts:118
+#, c-format
+msgid "Default: %s"
+msgstr "預設值：%s"
+
+#: src/settings.ts:103
+msgid "Header Indent (px)"
+msgstr "標題縮排 (px)"
+
+#: src/settings.ts:112
+msgid "Font Family"
+msgstr "字型"
+
+#: src/settings.ts:121
+msgid "Font Size (pt)"
+msgstr "字型大小 (pt)"
+
+#: src/settings.ts:130
+msgid "Font Color"
+msgstr "文字顏色"
+
+#: src/settings.ts:139
+msgid "Background Color"
+msgstr "背景顏色"
+
+#: src/settings.ts:145
+msgid "User style"
+msgstr "套用於面板的自訂 CSS"
+
+#: src/settings.ts:148
+msgid "User Style"
+msgstr "使用者樣式"
+
+#: src/settings.ts:156 src/settings.ts:164 src/settings.ts:172 src/settings.ts:180 src/settings.ts:188 src/settings.ts:196
+#, c-format
+msgid "H%s Prefix"
+msgstr "H%s 前綴"

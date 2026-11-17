@@ -1,0 +1,155 @@
+# Russian translation of Outline (i18n test build)
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-outline-i18n\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/index.ts:32
+msgid "Loading outline panel ..."
+msgstr "Загрузка панели структуры..."
+
+#: src/index.ts:108 src/index.ts:132
+msgid "Toggle outline"
+msgstr "Показать/скрыть структуру"
+
+#: src/index.ts:123 src/index.ts:136
+msgid "Toggle outline collapse all"
+msgstr "Свернуть/развернуть всю структуру"
+
+#: src/index.ts:130 src/settings.ts:11
+msgid "Outline"
+msgstr "Структура"
+
+#: src/panelHtml.ts:225 src/panelHtml.ts:233
+msgid "Collapse all"
+msgstr "Свернуть все"
+
+#: src/panelHtml.ts:231 src/panelHtml.ts:244
+msgid "OUTLINE"
+msgstr "СТРУКТУРА"
+
+#: src/panelHtml.ts:232
+msgid "Copy successful!"
+msgstr "Скопировано!"
+
+#: src/panelHtml.ts:234
+msgid "Expand all"
+msgstr "Развернуть все"
+
+#: src/panelHtml.ts:248
+msgid "Search outline"
+msgstr "Поиск по структуре"
+
+#: src/settings.ts:27
+msgid "show numbered headers"
+msgstr "Показывать нумерованные заголовки"
+
+#: src/settings.ts:30
+msgid "Show Number"
+msgstr "Показывать нумерацию"
+
+#: src/settings.ts:35
+msgid "headers can be collapsed"
+msgstr "Заголовки можно сворачивать"
+
+#: src/settings.ts:38
+msgid "Collapsible"
+msgstr "Сворачиваемые"
+
+#: src/settings.ts:43
+msgid "Automatically hide the panel when there is no content"
+msgstr "Автоматически скрывать панель, если нет содержимого"
+
+#: src/settings.ts:46
+msgid "Auto Hide"
+msgstr "Автоскрытие"
+
+#: src/settings.ts:51
+msgid "Item hover style type"
+msgstr "Стиль элемента при наведении курсора"
+
+#: src/settings.ts:54
+msgid "Hover Style Type"
+msgstr "Стиль при наведении"
+
+#: src/settings.ts:57
+msgid "bold"
+msgstr "Жирный"
+
+#: src/settings.ts:58
+msgid "highlight"
+msgstr "Подсветка"
+
+#: src/settings.ts:64
+msgid "Header depth"
+msgstr "Отображаемая глубина заголовков"
+
+#: src/settings.ts:67
+msgid "Header Depth"
+msgstr "Глубина заголовков"
+
+#: src/settings.ts:73
+msgid "Item Padding"
+msgstr "Отступ элементов"
+
+#: src/settings.ts:74
+msgid "This setting is used to change the height of toc item. The unit is px"
+msgstr "Этот параметр изменяет высоту элементов оглавления. Единица измерения — px"
+
+#: src/settings.ts:81
+msgid "User style file (CSS)"
+msgstr "Файл пользовательских стилей (CSS)"
+
+#: src/settings.ts:84
+msgid "User Style File"
+msgstr "Файл пользовательских стилей"
+
+#: src/settings.ts:91
+msgid "Disable the linewrap"
+msgstr "Отключить автоматический перенос строк"
+
+#: src/settings.ts:95
+msgid "Disable Linewrap"
+msgstr "Отключить перенос строк"
+
+#: src/settings.ts:100 src/settings.ts:118
+#, c-format
+msgid "Default: %s"
+msgstr "По умолчанию: %s"
+
+#: src/settings.ts:103
+msgid "Header Indent (px)"
+msgstr "Отступ заголовков (px)"
+
+#: src/settings.ts:112
+msgid "Font Family"
+msgstr "Шрифт"
+
+#: src/settings.ts:121
+msgid "Font Size (pt)"
+msgstr "Размер шрифта (pt)"
+
+#: src/settings.ts:130
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: src/settings.ts:139
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: src/settings.ts:145
+msgid "User style"
+msgstr "Пользовательский CSS для панели"
+
+#: src/settings.ts:148
+msgid "User Style"
+msgstr "Пользовательский стиль"
+
+#: src/settings.ts:156 src/settings.ts:164 src/settings.ts:172 src/settings.ts:180 src/settings.ts:188 src/settings.ts:196
+#, c-format
+msgid "H%s Prefix"
+msgstr "Префикс H%s"

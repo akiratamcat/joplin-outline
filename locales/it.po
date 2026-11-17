@@ -1,0 +1,155 @@
+# Italian translation of Outline (i18n test build)
+msgid ""
+msgstr ""
+"Project-Id-Version: joplin-plugin-outline-i18n\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/index.ts:32
+msgid "Loading outline panel ..."
+msgstr "Caricamento del pannello struttura..."
+
+#: src/index.ts:108 src/index.ts:132
+msgid "Toggle outline"
+msgstr "Mostra/nascondi struttura"
+
+#: src/index.ts:123 src/index.ts:136
+msgid "Toggle outline collapse all"
+msgstr "Comprimi/espandi tutta la struttura"
+
+#: src/index.ts:130 src/settings.ts:11
+msgid "Outline"
+msgstr "Struttura"
+
+#: src/panelHtml.ts:225 src/panelHtml.ts:233
+msgid "Collapse all"
+msgstr "Comprimi tutto"
+
+#: src/panelHtml.ts:231 src/panelHtml.ts:244
+msgid "OUTLINE"
+msgstr "STRUTTURA"
+
+#: src/panelHtml.ts:232
+msgid "Copy successful!"
+msgstr "Copiato!"
+
+#: src/panelHtml.ts:234
+msgid "Expand all"
+msgstr "Espandi tutto"
+
+#: src/panelHtml.ts:248
+msgid "Search outline"
+msgstr "Cerca nella struttura"
+
+#: src/settings.ts:27
+msgid "show numbered headers"
+msgstr "Mostra i titoli numerati"
+
+#: src/settings.ts:30
+msgid "Show Number"
+msgstr "Mostra numerazione"
+
+#: src/settings.ts:35
+msgid "headers can be collapsed"
+msgstr "I titoli possono essere compressi"
+
+#: src/settings.ts:38
+msgid "Collapsible"
+msgstr "Comprimibile"
+
+#: src/settings.ts:43
+msgid "Automatically hide the panel when there is no content"
+msgstr "Nasconde automaticamente il pannello quando non c'è contenuto"
+
+#: src/settings.ts:46
+msgid "Auto Hide"
+msgstr "Nascondi automaticamente"
+
+#: src/settings.ts:51
+msgid "Item hover style type"
+msgstr "Stile di un elemento al passaggio del mouse"
+
+#: src/settings.ts:54
+msgid "Hover Style Type"
+msgstr "Stile al passaggio del mouse"
+
+#: src/settings.ts:57
+msgid "bold"
+msgstr "Grassetto"
+
+#: src/settings.ts:58
+msgid "highlight"
+msgstr "Evidenziato"
+
+#: src/settings.ts:64
+msgid "Header depth"
+msgstr "Profondità dei titoli mostrati"
+
+#: src/settings.ts:67
+msgid "Header Depth"
+msgstr "Profondità dei titoli"
+
+#: src/settings.ts:73
+msgid "Item Padding"
+msgstr "Spaziatura degli elementi"
+
+#: src/settings.ts:74
+msgid "This setting is used to change the height of toc item. The unit is px"
+msgstr "Questa impostazione modifica l'altezza degli elementi del sommario. L'unità è px"
+
+#: src/settings.ts:81
+msgid "User style file (CSS)"
+msgstr "File di stile utente (CSS)"
+
+#: src/settings.ts:84
+msgid "User Style File"
+msgstr "File di stile utente"
+
+#: src/settings.ts:91
+msgid "Disable the linewrap"
+msgstr "Disattiva l'a capo automatico"
+
+#: src/settings.ts:95
+msgid "Disable Linewrap"
+msgstr "Disattiva a capo"
+
+#: src/settings.ts:100 src/settings.ts:118
+#, c-format
+msgid "Default: %s"
+msgstr "Predefinito: %s"
+
+#: src/settings.ts:103
+msgid "Header Indent (px)"
+msgstr "Rientro dei titoli (px)"
+
+#: src/settings.ts:112
+msgid "Font Family"
+msgstr "Carattere"
+
+#: src/settings.ts:121
+msgid "Font Size (pt)"
+msgstr "Dimensione carattere (pt)"
+
+#: src/settings.ts:130
+msgid "Font Color"
+msgstr "Colore del testo"
+
+#: src/settings.ts:139
+msgid "Background Color"
+msgstr "Colore di sfondo"
+
+#: src/settings.ts:145
+msgid "User style"
+msgstr "CSS personalizzato applicato al pannello"
+
+#: src/settings.ts:148
+msgid "User Style"
+msgstr "Stile utente"
+
+#: src/settings.ts:156 src/settings.ts:164 src/settings.ts:172 src/settings.ts:180 src/settings.ts:188 src/settings.ts:196
+#, c-format
+msgid "H%s Prefix"
+msgstr "Prefisso H%s"
