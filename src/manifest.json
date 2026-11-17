@@ -1,10 +1,11 @@
 {
 	"manifest_version": 1,
-	"id": "outline",
+	"id": "com.akiratamcat.joplin-outline-i18n",
 	"app_min_version": "1.6.7",
 	"version": "1.5.18",
-	"name": "Outline",
-	"description": "Outline (TOC) sidebar plugin for joplin.",
-	"author": "cqroot",
-	"homepage_url": "https://github.com/cqroot/joplin-outline"
+	"name": "Outline (i18n test)",
+	"description": "Outline (TOC) sidebar plugin for Joplin. Unofficial test build with UI translations (gettext PO), forked from cqroot/joplin-outline.",
+	"author": "cqroot, akiratamcat",
+	"homepage_url": "https://github.com/akiratamcat/joplin-outline",
+	"repository_url": "https://github.com/akiratamcat/joplin-outline"
 }
