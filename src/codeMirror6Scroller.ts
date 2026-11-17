@@ -8,7 +8,7 @@ export default (context: ContentScriptContext): MarkdownEditorContentScriptModul
     if (!editorControl.cm6) { return; }
 
     // Running in CM6
-    editorControl.registerCommand('scrollToLine', (lineNumber: number) => {
+    editorControl.registerCommand('outlineI18nScrollToLine', (lineNumber: number) => {
       const { editor } = editorControl;
 
       // Bounds checking

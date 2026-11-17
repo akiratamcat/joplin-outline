@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: joplin-plugin-outline-i18n\n"
+
+#: src/index.ts:32
+msgid "Loading outline panel ..."
+msgstr ""
+
+#: src/index.ts:108 src/index.ts:132
+msgid "Toggle outline"
+msgstr ""
+
+#: src/index.ts:123 src/index.ts:136
+msgid "Toggle outline collapse all"
+msgstr ""
+
+#: src/index.ts:130 src/settings.ts:11
+msgid "Outline"
+msgstr ""
+
+#: src/panelHtml.ts:225 src/panelHtml.ts:233
+msgid "Collapse all"
+msgstr ""
+
+#: src/panelHtml.ts:231 src/panelHtml.ts:244
+msgid "OUTLINE"
+msgstr ""
+
+#: src/panelHtml.ts:232
+msgid "Copy successful!"
+msgstr ""
+
+#: src/panelHtml.ts:234
+msgid "Expand all"
+msgstr ""
+
+#: src/panelHtml.ts:248
+msgid "Search outline"
+msgstr ""
+
+#: src/settings.ts:27
+msgid "show numbered headers"
+msgstr ""
+
+#: src/settings.ts:30
+msgid "Show Number"
+msgstr ""
+
+#: src/settings.ts:35
+msgid "headers can be collapsed"
+msgstr ""
+
+#: src/settings.ts:38
+msgid "Collapsible"
+msgstr ""
+
+#: src/settings.ts:43
+msgid "Automatically hide the panel when there is no content"
+msgstr ""
+
+#: src/settings.ts:46
+msgid "Auto Hide"
+msgstr ""
+
+#: src/settings.ts:51
+msgid "Item hover style type"
+msgstr ""
+
+#: src/settings.ts:54
+msgid "Hover Style Type"
+msgstr ""
+
+#: src/settings.ts:57
+msgid "bold"
+msgstr ""
+
+#: src/settings.ts:58
+msgid "highlight"
+msgstr ""
+
+#: src/settings.ts:64
+msgid "Header depth"
+msgstr ""
+
+#: src/settings.ts:67
+msgid "Header Depth"
+msgstr ""
+
+#: src/settings.ts:73
+msgid "Item Padding"
+msgstr ""
+
+#: src/settings.ts:74
+msgid "This setting is used to change the height of toc item. The unit is px"
+msgstr ""
+
+#: src/settings.ts:81
+msgid "User style file (CSS)"
+msgstr ""
+
+#: src/settings.ts:84
+msgid "User Style File"
+msgstr ""
+
+#: src/settings.ts:91
+msgid "Disable the linewrap"
+msgstr ""
+
+#: src/settings.ts:95
+msgid "Disable Linewrap"
+msgstr ""
+
+#: src/settings.ts:100 src/settings.ts:118
+#, c-format
+msgid "Default: %s"
+msgstr ""
+
+#: src/settings.ts:103
+msgid "Header Indent (px)"
+msgstr ""
+
+#: src/settings.ts:112
+msgid "Font Family"
+msgstr ""
+
+#: src/settings.ts:121
+msgid "Font Size (pt)"
+msgstr ""
+
+#: src/settings.ts:130
+msgid "Font Color"
+msgstr ""
+
+#: src/settings.ts:139
+msgid "Background Color"
+msgstr ""
+
+#: src/settings.ts:145
+msgid "User style"
+msgstr ""
+
+#: src/settings.ts:148
+msgid "User Style"
+msgstr ""
+
+#: src/settings.ts:156 src/settings.ts:164 src/settings.ts:172 src/settings.ts:180 src/settings.ts:188 src/settings.ts:196
+#, c-format
+msgid "H%s Prefix"
+msgstr ""

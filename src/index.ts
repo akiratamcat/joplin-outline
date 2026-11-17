@@ -3,26 +3,33 @@ import { ToolbarButtonLocation, ContentScriptType, MenuItemLocation } from 'api/
 import { registerSettings, settingValue, pluginIconName } from './settings';
 import markdownHeaders from './markdownHeaders';
 import panelHtml from './panelHtml';
+import { _, setLocale } from './i18n';
+
+// Command / view IDs are prefixed so this fork can coexist with the original plugin.
+const CMD_TOGGLE = 'outlineI18n.toggleOutline';
+const CMD_TOGGLE_COLLAPSE = 'outlineI18n.toggleOutlineCollapse';
 
 joplin.plugins.register({
   async onStart() {
+    // Follow Joplin's UI language (a language change requires restarting Joplin).
+    setLocale(String((await joplin.settings.globalValue('locale')) || 'en'));
     await registerSettings();
 
     await joplin.contentScripts.register(
       ContentScriptType.CodeMirrorPlugin,
-      'codeMirror5Scroller',
+      'outlineI18n.codeMirror5Scroller',
       './codeMirror5Scroller.js',
     );
     await joplin.contentScripts.register(
       ContentScriptType.CodeMirrorPlugin,
-      'codeMirror6Scroller',
+      'outlineI18n.codeMirror6Scroller',
       './codeMirror6Scroller.js',
     );
 
     const { panels } = joplin.views;
-    const view = await (panels as any).create('outline.panel');
+    const view = await (panels as any).create('outlineI18n.panel');
 
-    await panels.setHtml(view, 'Loading outline panel ...');
+    await panels.setHtml(view, _('Loading outline panel ...'));
     await panels.addScript(view, './webview.js');
     await panels.addScript(view, './webview.css');
     // cp ../node_modules/katex/dist/katex.min.* ./katex/
@@ -39,7 +46,7 @@ joplin.plugins.register({
         if (isMarkdown && editorVisible) {
           // Markdown editor: use scrollToLine command (viewer follows editor scroll in split view)
           await joplin.commands.execute('editor.execCommand', {
-            name: 'scrollToLine',
+            name: 'outlineI18nScrollToLine',
             args: [parseInt(message.lineno, 10)],
           });
         } else {
@@ -97,8 +104,8 @@ joplin.plugins.register({
     await updateTocView();
 
     await joplin.commands.register({
-      name: 'toggleOutline',
-      label: 'Toggle outline',
+      name: CMD_TOGGLE,
+      label: _('Toggle outline'),
       iconName: pluginIconName(),
       execute: async () => {
         const isVisible = !await settingValue('isVisible');
@@ -112,25 +119,25 @@ joplin.plugins.register({
       },
     });
     await joplin.commands.register({
-      name: 'toggleOutlineCollapse',
-      label: 'Toggle outline collapse all',
+      name: CMD_TOGGLE_COLLAPSE,
+      label: _('Toggle outline collapse all'),
       iconName: 'fas fa-chevron-up',
       execute: async () => {
         panels.postMessage(view, { name: 'toggleAll' });
       },
     });
-    await joplin.views.toolbarButtons.create('toggleOutline', 'toggleOutline', ToolbarButtonLocation.NoteToolbar);
-    await joplin.views.menus.create('outlineMenu', 'Outline', [
+    await joplin.views.toolbarButtons.create('outlineI18nToggleButton', CMD_TOGGLE, ToolbarButtonLocation.NoteToolbar);
+    await joplin.views.menus.create('outlineI18nMenu', _('Outline'), [
       {
-        label: 'toggleOutline',
-        commandName: 'toggleOutline',
+        label: _('Toggle outline'),
+        commandName: CMD_TOGGLE,
       },
       {
-        label: 'Toggle outline collapse all',
-        commandName: 'toggleOutlineCollapse',
+        label: _('Toggle outline collapse all'),
+        commandName: CMD_TOGGLE_COLLAPSE,
       },
     ], MenuItemLocation.Tools);
-    await joplin.views.menuItems.create('outlineMenuItem', 'toggleOutline', MenuItemLocation.EditorContextMenu);
-    await joplin.views.menuItems.create('outlineCollapseMenuItem', 'toggleOutlineCollapse', MenuItemLocation.EditorContextMenu);
+    await joplin.views.menuItems.create('outlineI18nMenuItem', CMD_TOGGLE, MenuItemLocation.EditorContextMenu);
+    await joplin.views.menuItems.create('outlineI18nCollapseMenuItem', CMD_TOGGLE_COLLAPSE, MenuItemLocation.EditorContextMenu);
   },
 });

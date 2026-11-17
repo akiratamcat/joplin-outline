@@ -8,6 +8,13 @@ let outlineSearchSavedGroups = null;
 let outlineSearchMatches = [];
 let outlineSearchActiveIndex = -1;
 
+// Translated strings are passed from panelHtml.ts as data-i18n-* attributes.
+function i18n(key, fallback) {
+  const root = document.querySelector('.outline-content');
+  const value = root && root.dataset ? root.dataset[key] : undefined;
+  return value || fallback;
+}
+
 function tocItemLinkClicked(dataset) {
   webviewApi.postMessage({
     name: 'scrollToHeader',
@@ -31,9 +38,9 @@ function copyInnerLink(dataset, text) {
     });
   }
 
-  document.getElementById('header').innerHTML = 'Copy successful!';
+  document.getElementById('header').textContent = i18n('i18nCopied', 'Copy successful!');
   setTimeout(() => {
-    document.getElementById('header').innerHTML = 'OUTLINE';
+    document.getElementById('header').textContent = i18n('i18nTitle', 'OUTLINE');
   }, 800);
 }
 
@@ -67,7 +74,7 @@ function updateOutlineToggleAllButton() {
 
   const expanded = areAllGroupsExpanded();
   button.innerHTML = expanded ? '&#8863;' : '&#8862;';
-  const tip = expanded ? 'Collapse all' : 'Expand all';
+  const tip = expanded ? i18n('i18nCollapseAll', 'Collapse all') : i18n('i18nExpandAll', 'Expand all');
   button.setAttribute('data-tip', tip);
   button.setAttribute('aria-label', tip);
 }

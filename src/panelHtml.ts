@@ -1,5 +1,6 @@
 import { readFileSync, existsSync } from 'fs';
 import { settingValue } from './settings';
+import { _ } from './i18n';
 
 // From https://stackoverflow.com/a/6234804/561309
 function escapeHtml(unsafe: string) {
@@ -221,22 +222,30 @@ ${[1, 2, 3, 4, 5, 6].map((item) => `.toc-item-${item} {
   let actionsHtml = '';
   if (collapsible && hasCollapsibleGroups) {
     actionsHtml = `<span class="outline-header-actions">
-<button type="button" id="outline-toggle-all" class="outline-action" data-tip="Collapse all" aria-label="Collapse all" onclick="toggleAllGroups()">&#8863;</button>
+<button type="button" id="outline-toggle-all" class="outline-action" data-tip="${escapeHtml(_('Collapse all'))}" aria-label="${escapeHtml(_('Collapse all'))}" onclick="toggleAllGroups()">&#8863;</button>
 </span>`;
   }
+
+  // Translated strings used by webview.js
+  const i18nAttrs = [
+    ['title', _('OUTLINE')],
+    ['copied', _('Copy successful!')],
+    ['collapse-all', _('Collapse all')],
+    ['expand-all', _('Expand all')],
+  ].map(([key, value]) => `data-i18n-${key}="${escapeHtml(value)}"`).join(' ');
 
   return `<html><head><style>
 ${defaultStyle}
 ${userStyleFromFile}
 ${userStyle}
 </style></head>
-<body><div class="outline-content">
+<body><div class="outline-content" ${i18nAttrs}>
 <div class="outline-header">
-<a id="header" href="javascript:;" onclick="scrollToTop()" oncontextmenu="copyInnerLink('', '')">OUTLINE</a>
+<a id="header" href="javascript:;" onclick="scrollToTop()" oncontextmenu="copyInnerLink('', '')">${escapeHtml(_('OUTLINE'))}</a>
 ${actionsHtml}
 </div>
 <div id="outline-search" class="outline-search" style="display: none;">
-<input id="outline-search-input" type="text" placeholder="Search outline" />
+<input id="outline-search-input" type="text" placeholder="${escapeHtml(_('Search outline'))}" />
 </div>
 <div class="container">
 ${itemHtmlList.join('\n')}

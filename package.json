@@ -1,21 +1,27 @@
 {
-  "name": "joplin-plugin-outline",
+  "name": "joplin-plugin-outline-i18n",
   "version": "1.5.18",
-  "description": "",
+  "description": "Outline (TOC) sidebar plugin for Joplin - unofficial i18n test build (fork of cqroot/joplin-outline)",
+  "author": "cqroot, akiratamcat",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cqroot/joplin-outline.git"
+    "url": "git+https://github.com/akiratamcat/joplin-outline.git"
   },
-  "homepage": "https://github.com/cqroot/joplin-outline",
+  "homepage": "https://github.com/akiratamcat/joplin-outline",
   "bugs": {
-    "url": "https://github.com/cqroot/joplin-outline/issues"
+    "url": "https://github.com/akiratamcat/joplin-outline/issues"
   },
   "scripts": {
-    "dist": "webpack --env joplin-plugin-config=buildMain && webpack --env joplin-plugin-config=buildExtraScripts && webpack --env joplin-plugin-config=createArchive",
+    "i18n": "node scripts/compile-po.js",
+    "i18n:extract": "node scripts/extract-pot.js",
+    "i18n:check": "node scripts/extract-pot.js --check",
+    "dist": "npm run i18n && webpack --env joplin-plugin-config=buildMain && webpack --env joplin-plugin-config=buildExtraScripts && webpack --env joplin-plugin-config=createArchive",
     "prepare": "npm run dist",
     "updateVersion": "webpack --env joplin-plugin-config=updateVersion",
     "update": "npm install -g generator-joplin && yo joplin --node-package-manager npm --update --force",
+    "prelint": "npm run i18n",
     "lint": "eslint --ext .js,.ts src",
+    "pretest": "npm run i18n",
     "test": "jest"
   },
   "keywords": [
